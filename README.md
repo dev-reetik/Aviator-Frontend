@@ -111,4 +111,11 @@ Socket.IO is used to handle real-time events:
 
 See `src/hooks/useSocket.js` for WebSocket integration details.
 
+## 🌐 Live Deployment
+
+**Frontend**: https://aviator-frontend-eta.vercel.app (Hosted on Vercel)
+
+**Backend**: Hosted on Render
+
+**⚠️ Important Note**: The backend is deployed on a free tier hosting service. Please allow **10-15 minutes for the server to start up** on first access. Subsequent requests will be faster. This is normal behavior for free tier deployments.
 
