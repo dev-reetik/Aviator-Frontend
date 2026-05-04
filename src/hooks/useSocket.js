@@ -23,6 +23,15 @@ export function useSocket() {
   const socketRef = useRef(null);
   const [state, setState] = useState(initialRoundState);
 
+ 
+  useEffect(() => {
+    if (!token && socketRef.current) {
+      socketRef.current.disconnect();
+      socketRef.current = null;
+      setState(initialRoundState);
+    }
+  }, [token]);
+
   useEffect(() => {
     if (!token) return undefined;
 
